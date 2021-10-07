@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Principe Mattia Portfolio</title>
+  <!--FavIco-->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!--Css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Switch per Dark Mode-->
+<input onclick="darkMode()" type="checkbox" name="toggleMode" id="toggleMode"><label class="label_light" for="toggleMode" id="label"><i id="icon" class="fas fa-moon"></i></label>
+<!--Welcome Section-->
+<div class="welcome" id="dark">
+  <header>
+    <div class="navbar" id="dark" >
+      <div class="navlogo normaltext" id="testo">M{<span>P</span>}</div>
+      <div class="navlinks">
+        <ul class="links">
+          <a href="#aboutanc"><li id="link1">About</li></a>
+          <a href="#skillanc"><li id="link2">Skills</li></a>
+          <a href="#contactanc"><li id="link3"> Contact</li></a>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <div class="welcome_content">
+    <div class="welcome_content_text" name="testo">
+      <h4 class="normaltext" id="welcometext1">Mattia Principe</h4>
+      <h1 class="boldtext" id="welcometext2">Frontend Developer</h1>
+      <p class="thintext" id="welcometext3">Frequento il corso <span class="spantext" >Svilippo Web</span> all accademy di <span class="spantext">Start2Impact</span>. Vivo a Napoli e sono un appassionato di tecnologia e informatica, e vorrei fare della mia passione un lavoro.</p>
+      <div class="cta">
+        <a class="ctabutton" href="#skillanc">Scopri le mie skill</a>
+      </div>
+    </div>
+    <div class="welcome_content_image">
+      <img src="img/memojivideo.gif" alt="">
+    </div>
+  </div>
+</div>
+<!--About Section-->
+<div id="aboutanc"></div>
+<div id="aboutbg" class="about"> 
+  <div class="about_content">
+    <h2 class="boldtext">Conosciamoci Meglio</h2>
+    <div class="divisorio"></div>
+    <p class="thintext spacing">Smanettone tecnologico e nativo digitale, è così che mi definiscono gli amici. Curioso e sognatore aggiungerei per completare il mio profilo personale. Del mondo digital mi appassiona fortemente lo sviluppo di interfacce utente per siti web e applicazioni. Ho iniziato da autodidatta, sperimentando le infinite possibilità legate al mondo dello sviluppo. Oggi sono studente del corso di Sviluppo Web e App di Start2Impact per apprendere le competenze più richieste dalle aziende sul mercato, attraverso un percorso guidato da docenti e professionisti del settore. Non vedo l'ora di prender parte ad un team di sviluppo per contribuire alla progettazione di soluzioni innovative ai problemi front-end. Ora torno a studiare, alzo il volume alle cuffie, passo al prossimo esercizio.
+    </p>
+  </div>
+</div>
+<!--Skill Section con slideshow per mobile/tablet-->
+<div id="skillanc" style="height: 50px;"></div>
+<div class="skill spacing hide" id="skill">
+  <div class="skill_content">
+    <h4 class="normaltext" id="skilltext2">Skill</h4>
+    <h2 class="boldtext" id="skilltext3">Cosa sto imparando</h2>
+    <div class="divisorio"></div>
+    <br>
+  </div>
+  <div class="slideshow-container">
+    <!--card1-->
+    <div class="mySlides1 fade">
+      <div class="skill_card" id="card1">
+        <h4 class="boldtext" id="skilltext4">HTML</h4>
+        <img class="imglogo" src="img/logo1.png" alt="HTML Logo">
+      </div>
+    </div>
+    <!--card2-->
+    <div class="mySlides1 fade">
+      <div class="skill_card" id="card2">
+        <h4 class="boldtext" id="skilltext5">CSS 3</h4>
+        <img class="imglogo" src="img/logo2.png" alt="">
+      </div>
+    </div>
+    <!--card3-->
+    <div class="mySlides1 fade">
+      <div class="skill_card" id="card3">
+        <h4 class="boldtext" id="skilltext6">Javascript</h4>
+        <img class="imglogo" src="img/logo3.png" style="border-radius: 12px;"alt="">    
+      </div>
+    </div>
+    <!--Bottoni slideshow-->  
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+  <br>
+</div>
+<!--Skill Section per dektop/tablet landscape-->
+<div class="skilldesktop spacing desktop" id="skilldesktop">
+  <div class="skill_content_dektop">
+    <h4 class="normaltext" id="skilltext2desktop">Skill</h4>
+    <h2 class="boldtext" id="skilltext3desktop"desktop>Cosa sto imparando</h2>
+    <div class="divisorio"></div>
+    <br>
+  </div>
+  <div class="slideshow-container-desktop">
+    <!--card1-->
+    <div class="skill_card_desktop" id="card1desktop">
+      <h4 class="boldtext" id="skilltext4desktop">HTML</h4>
+      <img class="imglogo" src="img/logo1.png" alt="HTML Logo">
+    </div>
+    <!--card2-->
+    <div class="skill_card_desktop" id="card2desktop">
+      <h4 class="boldtext" id="skilltext5desktop">CSS 3</h4>
+      <img class="imglogo" src="img/logo2.png" alt="">
+    </div>
+    <!--card3-->
+    <div class="skill_card_desktop" id="card3desktop">
+      <h4 class="boldtext" id="skilltext6desktop">Javascript</h4>
+      <img class="imglogo" src="img/logo3.png" style="border-radius: 12px;"alt="">    
+    </div>
+  </div>
+  <br>
+</div>
+<!--Passion Section-->
+<div class="skill spacing hide" id="passioni">
+  <div class="skill_content">
+    <h4 class="normaltext" id="passiontext1">Passioni</h4>
+    <h2 class="boldtext" id="passiontext2">Sono in fissa con...</h2>
+    <div class="divisorio"></div>
+    <br>
+  </div>
+  <div class="slideshow-container">
+    <!--card1-->
+    <div class="mySlides2 fade">
+      <div class="skill_card" id="card4">
+        <h4 class="boldtext" id="passiontext3">Sport</h4>
+        <img class="imglogo" src="img/pass3.png" alt="HTML Logo">
+        <p id="passiontext4">Calcio, Padel e Basket</p>
+      </div>
+    </div>
+    <!--card2-->
+    <div class="mySlides2 fade">
+      <div class="skill_card" id="card5">
+        <h4 class="boldtext" id="passiontext5">Musica</h4>
+        <img class="imglogo" src="img/pass2.png" alt="">
+        <p id="passiontext6">Hip Hop, RnB e Soul</p>        
+      </div>
+    </div>
+    <!--card3-->
+    <div class="mySlides2 fade">
+      <div class="skill_card" id="card6">
+        <h4 class="boldtext" id="passiontext7">Motori</h4>
+        <img class="imglogo" src="img/pass1.png">
+        <p id="passiontext8">Auto e Moto da corsa</p>        
+      </div>
+    </div>
+    <!--Bottoni per slideshow-->  
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+  <br>
+</div>
+<!--passion Section per dektop-->
+<div class="skilldesktop spacing desktop" id="passiondesktop">
+  <div class="skill_content_dektop">
+    <h4 class="normaltext" id="passiontext1desktop">Passioni</h4>
+    <h2 class="boldtext" id="passiontext2desktop">Sono in fissa con...</h2>
+    <div class="divisorio"></div>
+    <br>
+  </div>
+  <div class="slideshow-container-desktop">
+    <!--card1-->
+    <div class="skill_card_desktop" id="card4desktop">
+      <h4 class="boldtext" id="passiontext3desktop">Sport</h4>
+        <img class="imglogo" src="img/pass3.png" alt="HTML Logo">
+        <p id="passiontext4desktop">Calcio, Padel e Basket</p>
+    </div>
+    <!--card2-->
+    <div class="skill_card_desktop" id="card5desktop">
+      <h4 class="boldtext" id="passiontext5desktop">Musica</h4>
+        <img class="imglogo" src="img/pass2.png" alt="">
+        <p id="passiontext6desktop">Hip Hop, RnB e Soul</p>        
+    </div>
+    <!--card3-->
+    <div class="skill_card_desktop" id="card6desktop">
+      <h4 class="boldtext" id="passiontext7desktop">Motori</h4>
+        <img class="imglogo" src="img/pass1.png" alt="">
+        <p id="passiontext8desktop">Auto e Moto da corsa</p>        
+    </div>
+  </div>
+  <br>
+</div>
+<!--Contact Section-->
+<div id="contactanc"></div>
+<footer>
+  <div id="contactbg" class="contact">
+    <div class="contact_content">
+      <h4 class="normaltext"></h4>
+      <h2 class="boldtext">Teniamoci in contatto</h2>
+      <div class="divisorio"></div>
+      <div class="cta2 spacing">
+        <!--Bottone Mail-->
+        <a class="ctabutton" href="mailto:mattiaprincipe@me.com"><i class="fa-3x fas fa-envelope" style="color: white;"></i></a>
+        <!--Bottone LinkedIn-->
+        <a class="ctabutton" href="https://www.linkedin.com/in/mattia-principe-99540291?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgRTLvFNaQkGry1ObQikILA%3D%3D"><i class="fa-3x fab fa-linkedin" style="color: white;"></i></a>
+      </div>
+    </div>
+  </div>
+  <div id="footerbg" class="footer">
+    <h4>© Copyright Mattia Principe. Sviluppato nel 2021.</h4>
+  </div>
+</footer>
+<!--Javascript per slideshow-->
+<script src="js/app.js"></script>
+</body>
+</html>
+<!--                 _            _
+          _ __  _ __(_)_ __   ___(_)_ __   ___ 
+         | '_ \| '__| | '_ \ / __| | '_ \ / _ \
+         | |_) | |  | | | | | (__| | |_) |  __/
+         | .__/|_|  |_|_| |_|\___|_| .__/ \___|
+         |_|                       |_|                -->
